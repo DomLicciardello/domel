@@ -1,5 +1,6 @@
 import React from 'react'
 import Header from '../components/Header'
+import Footer from '../components/Footer';
 
 export default function Components() {
     const htmlCode = `
@@ -19,8 +20,8 @@ body {
 
   return (
     <>
+    <Header></Header>
     <div className='components'>
-      <Header/>
         <div className="grid" style={{maxWidth:'100%'}}>
             <div className="navbar col-15">
               <ul className="navbar__list">
@@ -40,7 +41,7 @@ body {
               <div className="grid grid--small">
 
               <div className="col-100">  
-              <h2 className='components__content__title text-center'>Components</h2>
+              <h2 className='components__content__title text-center mt-2'>Components</h2>
               </div>
 
               <div className="col-100">
@@ -62,6 +63,7 @@ body {
             </div>
         </div>
     </div>
+    <Footer></Footer>
     </>
   )
 }
